@@ -1,0 +1,96 @@
+.foodMenuPage{
+  padding-top: 90px;
+  padding-bottom: 50px;
+  position: relative;
+  @media(max-width: 991px){
+    padding-top: 70px;
+  }
+  .content{
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .title-desc{
+      margin-top: -30px;
+      margin-bottom: 30px;
+      font-size: 18px;
+      font-style: italic;
+      font-weight: 900;
+      color: var(--color-white);
+      -webkit-text-stroke: .5px var(--color-bras);
+    }
+    h2{
+      display: inline-block;
+      text-align: center;
+      color: var(--color-white);
+      -webkit-text-stroke: .5px var(--color-bras);
+      font-weight: 700;
+      font-size: 24px;
+      margin: 0 auto 30px;
+      position: relative;
+      //text-shadow: 2px 3px 2px var(--color-black);
+      &:after{
+        content: '';
+        position: absolute;
+        top: 45%;
+        left: -15px;
+        width: 10px;
+        height: 2px;
+        background: var(--color-white);
+      }
+      &:before{
+        content: '';
+        position: absolute;
+        top: 45%;
+        right: -15px;
+        width: 10px;
+        height: 2px;
+        background: var(--color-white);
+      }
+    }
+    .foodList{
+      list-style: none;
+      padding: 0;
+      li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        margin-bottom: 25px;
+        color: var(--color-white);
+        -webkit-text-stroke: .5px var(--color-bras);
+        //text-shadow: 2px 2px 2px #000;
+        .foodName{
+          font-weight: 700;
+          font-size: 21px;
+          margin-bottom: 5px;
+          //text-shadow: 2px 3px 2px var(--color-red);
+        }
+        .foodDescription{
+          font-size: 18px;
+          margin-bottom: 5px;
+          -webkit-text-stroke: .3px var(--color-bras);
+        }
+        .foodPrice{
+          margin: 0;
+          font-size: 18px;
+          font-style: italic;
+          font-weight: 900;
+          color: var(--color-white);
+        }
+      }
+    }
+  }
+  .video-background{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+}

@@ -1,0 +1,16 @@
+.eventsPage{
+  h1,h2,h3{
+    color: var(--color-bras);
+  }
+  .event-name{
+    text-align: center;
+  }
+  .event-type{
+    text-align: center;
+    color: var(--color-white);
+  }
+  .event-time{
+    text-align: center;
+    color: var(--color-white);
+  }
+}
