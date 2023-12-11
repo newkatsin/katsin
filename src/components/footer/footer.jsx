@@ -5,7 +5,7 @@ import phone from '../../assets/icons/call.png';
 import calendar from '../../assets/icons/calendar.png';
 import clock from '../../assets/icons/clock.png';
 import mail from '../../assets/icons/email.png';
-import logo from '../../assets/logo-big.png';
+import logo from '../../assets/katsin-logo-white.png';
 import {NavLink} from 'react-router-dom';
 
 const Footer = () => {

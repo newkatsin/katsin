@@ -28,6 +28,7 @@
     &:hover{
       background: none;
       color: var(--color-bras);
+      //-webkit-text-stroke: .5px var(--color-bras);
     }
     &.outline{
       background: none;

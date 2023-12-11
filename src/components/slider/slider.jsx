@@ -35,7 +35,7 @@ const Slider = ({ title, data, buttonValue, onClick }) => {
           );
         })}
         {!!buttonValue?.length ? (
-          <Button className="slider-button" onClick={onClick}>
+          <Button className="slider-button white" onClick={onClick}>
             {buttonValue}
           </Button>
         ) : (

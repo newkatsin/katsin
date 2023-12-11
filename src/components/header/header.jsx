@@ -58,7 +58,7 @@ const Header = ({ showSideBar, setShowSideBar }) => {
       </a>
       <Button
         onClick={handleClick}
-        className={` ${loc.pathname.includes("events") ? "inevents" : ""}`}
+        className={`white ${loc.pathname.includes("events") ? "inevents" : ""}`}
       >
         Book Now
       </Button>
