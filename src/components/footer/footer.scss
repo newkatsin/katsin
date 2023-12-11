@@ -138,7 +138,8 @@
     text-align: center;
     padding: 5px;
     a{
-      color: var(--color-bras);
+      font-weight: bolder;
+      color: var(--color-white);
     }
   }
   .footer-links{
@@ -192,17 +193,23 @@
       object-fit: contain;
     }
   }
+
   @media (max-width: 786px) {
     .site-link{
       padding: 0 10px;
     }
     .hours{
-      justify-content: space-around;
       padding: 0;
       &>div{
         width: fit-content;
         padding: 0 10px;
       }
+      @media (max-width: 767px) {
+        .closed{
+          margin-left: 50px;
+        }
+      }
+
     }
     .info-col{
       margin: 0 auto;

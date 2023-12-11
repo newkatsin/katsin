@@ -22,24 +22,48 @@ const Footer = () => {
                                     alt="img"
                                 />
                             </div>
-                            <div className="hours mb-3">
-                                <div className="mb-3">
-                                    <img src={calendar} alt="img"/>
-                                    <p>Sunday-Wednesday</p>
+                            <div className="row flex-md-column flex-row mb-3">
+                                <div className="col-6 col-md-12">
+                                    <div className="hours">
+                                        <div className="mb-3">
+                                            <img src={calendar} alt="img"/>
+                                            <p>Tuesday-Sunday</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div>
-                                    <img src={clock} alt="img"/>
-                                    <p>5:00PM - 0:00AM</p>
+                                <div className="col-6 col-md-12">
+                                    <div className="hours">
+                                        <div>
+                                            <img src={clock} alt="img"/>
+                                            <p>5:00PM - 0:00AM</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div className="hours mb-3">
-                                <div className="mb-3">
-                                    <img src={calendar} alt="img"/>
-                                    <p>Thursday - Saturday</p>
+                            <div className="d-md-flex d-none mt-4">
+                                <div className="hours">
+                                    <div className="mb-3">
+                                        <img src={calendar} alt="img"/>
+                                        <p>Monday - Closed</p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <img src={clock} alt="img"/>
-                                    <p>5:00PM - 2:00AM</p>
+
+                            </div>
+                            <div className="row mt-4 d-flex d-md-none">
+                                <div className="col-6">
+                                    <div className="hours">
+                                        <div className="mb-3">
+                                            <img src={calendar} alt="img"/>
+                                            <p>Monday</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-6">
+                                    <div className="hours">
+                                        <div className="mx-auto">
+                                            <p className="closed">Closed</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

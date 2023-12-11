@@ -17,11 +17,14 @@
     text-align: center;
     color: var(--color-white);
     h4{
-      color: var(--color-red);
+      color: var(--color-white);
+      -webkit-text-stroke: .6px var(--color-bras);
       text-shadow: 1px 1px 1px var(--color-black);
     }
     a{
       color: var(--color-red);
+      font-weight: bolder;
+      text-decoration: underline;
     }
   }
 }

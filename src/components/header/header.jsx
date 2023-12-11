@@ -3,7 +3,7 @@ import "./header.scss";
 import HamburgerButton from "../hamburgerButton";
 import Button from "../button";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import logo from "../../assets/katsin-logo-white.png";
+import logo from "../../assets/katsin-logo-black.png";
 import location from "../../assets/icons/location.png";
 import phone from "../../assets/icons/call.png";
 import { useNavigate } from "react-router";

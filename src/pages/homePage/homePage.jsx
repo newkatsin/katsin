@@ -5,7 +5,6 @@ import Slider from "../../components/slider";
 import { cuisineSlider, venueSlider } from "../../components/slider/mock";
 import { scrollToSection } from "../../utils/scrollToSection";
 
-import cocktail from "../../assets/images/cocktail.jpg";
 import { useNavigate } from "react-router";
 
 const HomePage = ({ sideRef }) => {
@@ -52,21 +51,22 @@ const HomePage = ({ sideRef }) => {
           />
         </div>
       </section>
-      <div className="img-section">
-        <div className="container">
-          <div className="gradient-image">
-            <div className="bg"></div>
-            <img src={cocktail} alt="img" className="img-fluid img-gradient" />
-          </div>
-        </div>
-      </div>
+      {/*<div className="img-section">*/}
+      {/*  <div className="container">*/}
+      {/*    <div className="gradient-image">*/}
+      {/*      <div className="bg"></div>*/}
+      {/*      <img src={cocktail} alt="img" className="img-fluid img-gradient" />*/}
+      {/*    </div>*/}
+      {/*  </div>*/}
+      {/*</div>*/}
       <section id="venue" className="sectionVanue">
         <div className="container">
           <Slider
-            title={"Gallery"}
+            // title={"Gallery"}
             data={venueSlider}
-            buttonValue="Book a Table"
+            // buttonValue="Book a Table"
             onClick={() => bookNow()}
+            className={"gallerySlider"}
           />
         </div>
       </section>

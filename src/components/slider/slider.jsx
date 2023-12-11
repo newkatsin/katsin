@@ -9,9 +9,9 @@ import './slider.scss';
 import Button from '../button';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
-const Slider = ({ title, data, buttonValue, onClick }) => {
+const Slider = ({ title, data, buttonValue, onClick, className }) => {
   return (
-    <div className="cuisineSlider">
+    <div className={`cuisineSlider ${!!className ? className : ''}`}>
       <p className="sectionLabel">{title}</p>
       <Swiper
         spaceBetween={30}
@@ -35,7 +35,7 @@ const Slider = ({ title, data, buttonValue, onClick }) => {
           );
         })}
         {!!buttonValue?.length ? (
-          <Button className="slider-button white" onClick={onClick}>
+          <Button className="slider-button" onClick={onClick}>
             {buttonValue}
           </Button>
         ) : (

@@ -16,10 +16,11 @@ const JobsPage = () => {
             Join us at Katsin as we embark on a journey to delight taste buds and create memories
             that linger long after the last bite.
           </p>
-          <p>
+          <p className="m-0">
             If you would like to apply, please send your resume to{' '}
-            <a href="mailto:info@katsinusa.com">info@katsinusa.com</a>
           </p>
+          <a href="mailto:info@katsinusa.com">info@katsinusa.com</a>
+
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
 .myBtn{
-  background: var(--background-bras);
+  background: transparent;
   color: var(--color-black);
-  border: 1px solid var(--background-bras);
+  border: 1px solid var(--background-white);
   padding: 8px 10px;
   font-size: 14px;
   cursor: pointer;
@@ -15,28 +15,25 @@
   }
   &.outline{
     background: none;
-    color: var(--color-bras);
-    &:hover{
-      background: var(--background-bras);
-      color: var(--color-black);
-    }
+    color: var(--color-white);
+
   }
   &.white{
-    background: var(--background-white);
-    color: var(--color-black);
-    border: 1px solid var(--background-white);
+    background: var(--background-black);
+    color: var(--color-white);
+    border: 1px solid var(--background-black);
     &:hover{
       background: none;
       color: var(--color-bras);
       //-webkit-text-stroke: .5px var(--color-bras);
     }
     &.outline{
-      background: none;
-      color: var(--color-white);
-      &:hover{
-        color: var(--color-bras);
-        border: 1px solid var(--background-bras);
-      }
+      background: transparent;
+      color: var(--color-black);
+      //&:hover{
+      //  color: var(--color-bras);
+      //  border: 1px solid var(--background-bras);
+      //}
     }
   }
   @media (max-width: 576px) {

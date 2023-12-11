@@ -8,6 +8,8 @@
 
   a{
     color: var(--color-red);
+    font-weight: bolder;
+    text-decoration: underline;
   }
   .location-link, .phone-link, .email-link{
     display: flex;

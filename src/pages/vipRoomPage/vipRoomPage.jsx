@@ -11,7 +11,7 @@ const VipRoomPage = () => {
         <div className="info">
           <h3 className="d-flex align-items-center">
             <p className="m-0">VIP Room Reservation</p>
-            <Button variant={'outline'} onClick={() => window.open('tel:+18188693030', '_self')}>
+            <Button onClick={() => window.open('tel:+18188693030', '_self')}>
               Call Now
             </Button>
           </h3>
@@ -30,7 +30,7 @@ const VipRoomPage = () => {
         <Slider
           title={'VIP ROOM'}
           data={vipRoomSlider}
-          buttonValue="Call"
+          // buttonValue="Call Now"
           onClick={() => window.open('tel:+18188693030', '_self')}
         />
       </div>

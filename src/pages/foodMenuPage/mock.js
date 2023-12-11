@@ -41,7 +41,7 @@ export const appetizers = [
     id: uuid(),
     name: 'CURED MEAT PLATTER',
     description: 'deep fried breaded eggplants, cherry tomato, sweet and sour sauce, cashews',
-    price: '48'
+    price: '46'
   },
   {
     id: uuid(),
@@ -79,26 +79,32 @@ export const salads = [
   {
     id: uuid(),
     name: 'QUINOA AVOCADO',
-    description: 'Creamcheese, fresh herbs, pike caviar, parmegiano and gouda waffles',
+    description: 'Smoked eel, unagi sauce, tobiko',
     price: '21',
   },
   {
     id: uuid(),
     name: 'SEAFOOD SALAD',
-    description: 'Creamcheese, fresh herbs, pike caviar, parmegiano and gouda waffles',
+    description: 'Scallops, shrimp, Parmesan sauce, mustard sauce, tomatoes Concasse',
     price: '28',
   },
   {
     id: uuid(),
-    name: 'SEAFOOD BISQUE',
-    description: 'House made brisket, fried capers, tonnato sauce',
+    name: 'Herlum tomato salad',
+    description: 'Feta cheese, dressing with sesame oil, soy, truffle',
     price: '21',
   },
   {
     id: uuid(),
-    name: 'TOM YUM STYLE LOBSTER',
-    description: 'deep fried breaded eggplants, cherry tomato, sweet and sour sauce, cashews',
-    price: '40',
+    name: 'SEAFOOD BISQUE',
+    description: 'Lobster, shrimp, scallops, clams ,сream',
+    price: '28',
+  },
+  {
+    id: uuid(),
+    name: 'TOM YUM SOUP',
+    description: 'Lobster tail, red caviar, tom yum foam, egg noodles',
+    price: '27',
   },
 ];
 
@@ -118,13 +124,13 @@ export const rawBar = [
   {
     id: uuid(),
     name: 'SALMON TARTARE',
-    description: 'Nordic salmon, dijon, cilantro, shallots',
+    description: 'Spinach, tamarind sauce, avocado cream, capers, yolk cream',
     price: '17',
   },
   {
     id: uuid(),
     name: 'TUNA TARTARE',
-    description: 'big eye tuna, shallot vinaigrette, basil, serrano peppers',
+    description: 'Avocado, masahosu sauce, yolk cream, capers, masago sauce, seed crackers',
     price: '17',
   },
   {
@@ -136,7 +142,7 @@ export const rawBar = [
   {
     id: uuid(),
     name: 'SALMON CEVICHE',
-    description: 'House made brisket, fried capers, tonnato sauce',
+    description: 'Tigre milk, red onion , olive oil , chilli, mango , passion fruit',
     price: '16',
   },
   {
@@ -368,7 +374,7 @@ export const foodMenu = [
   },
   {
     id: uuid(),
-    title: 'SALADS',
+    title: 'SALADS & SOUP',
     type: salads,
   },
   {

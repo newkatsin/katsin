@@ -117,7 +117,7 @@ const PrivacyPolicyPage = () => {
           </p>
         </div>
         <div>
-          <h4>Katsin Dining Restaurant and Bar</h4>
+          <h4 className="mb-3">Katsin Dining Restaurant and Bar</h4>
           <div>
             <a
               href="https://www.google.com/maps/place/515+W+Broadway,+Glendale,+CA+91204/@34.1469975,-118.2658522,17z/data=!3m1!4b1!4m6!3m5!1s0x80c2c059cd1794bf:0xa2e2eb7f04a67441!8m2!3d34.1469975!4d-118.2658522!16s%2Fg%2F11csksbsjl?entry=ttu"
@@ -130,9 +130,9 @@ const PrivacyPolicyPage = () => {
             </a>
           </div>
           <div>
-            <a href="tel:+4733378901" className="phone-link">
+            <a href="tel:+8188693030" className="phone-link">
               <img src={phone} alt="img" />
-              <span>+47 333 78 901</span>
+              <span>+1 (818)-869-3030</span>
             </a>
           </div>
           <div>
