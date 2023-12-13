@@ -24,15 +24,25 @@ const FoodMenuPage = () => {
           return (
             <div key={item.id} id={item.title.toUpperCase()} className="content">
               <h2>{item.title.toUpperCase()}</h2>
-                {
-                    !!item.description ? <p className="title-desc">{item.description}</p> : ''
-                }
+              {!!item.description ? <p className="title-desc">{item.description}</p> : ''}
               <ul className="foodList">
                 {item.type.map(food => {
                   return (
                     <li key={food.id}>
                       <p className="foodName">{food.name.toUpperCase()}</p>
-                      <p className="foodDescription">{food.description}</p>
+                      <p className="foodDescription">
+                        {food.description &&
+                          food.description.map((item, index) => {
+                            return (
+                              <p
+                                className={`foodDescription ${food.isMany ? 'many' : ''}`}
+                                key={index}
+                              >
+                                {item.name}
+                              </p>
+                            );
+                          })}
+                      </p>
                       <p className="foodPrice">{food.price}</p>
                     </li>
                   );
