@@ -32,7 +32,7 @@ const Header = ({ showSideBar, setShowSideBar }) => {
     <header tabIndex="0" className="header">
       <HamburgerButton isActive={showSideBar} onClick={() => setShowSideBar(!showSideBar)} />
       <a
-        href="https://www.google.com/maps/place/515+W+Broadway,+Glendale,+CA+91204/@34.1469975,-118.2658522,17z/data=!3m1!4b1!4m6!3m5!1s0x80c2c059cd1794bf:0xa2e2eb7f04a67441!8m2!3d34.1469975!4d-118.2658522!16s%2Fg%2F11csksbsjl?entry=ttu"
+        href="https://www.google.com/maps/place/Katsin+Restaurant+and+Dining+Bar/@34.1470597,-118.2672905,17z/data=!3m1!4b1!4m6!3m5!1s0x80c2c1c8f527aba1:0xaa8b3daade84e096!8m2!3d34.1470553!4d-118.2647156!16s%2Fg%2F11y2344l5j?entry=ttu"
         target="_blank"
         rel="noreferrer"
         className="location-link"
