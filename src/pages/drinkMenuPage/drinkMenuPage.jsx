@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
-import "./drinkMenuPage.scss";
-import { scrollToSection } from "../../utils/scrollToSection";
-import video from "../../assets/video/ice-water.mp4";
-import ScrollToHeader from "../../components/scrollToHeader";
-import { drinkMenu } from "./mock";
+import React, { useEffect, useState } from 'react';
+import './drinkMenuPage.scss';
+import { scrollToSection } from '../../utils/scrollToSection';
+import video from '../../assets/video/ice-water.mp4';
+import ScrollToHeader from '../../components/scrollToHeader';
+import { newdrinkMenu } from './newmock';
 
 const DrinkMenuPage = () => {
   const [myRef, setMyRef] = useState();
@@ -14,49 +14,29 @@ const DrinkMenuPage = () => {
 
   return (
     <div className={`drinkMenuPage`}>
-      <ScrollToHeader links={drinkMenu} setMyRef={setMyRef} />
-      <video
-        className="video-background"
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload={"metadata"}
-      >
+      <ScrollToHeader links={newdrinkMenu} setMyRef={setMyRef} />
+      <video className="video-background" autoPlay muted loop playsInline preload={'metadata'}>
         <source src={video} type="video/mp4" />
       </video>
       <div className="container">
-        {drinkMenu.map((item) => {
+        {newdrinkMenu.map(item => {
           return (
-            <div
-              key={item.id}
-              id={item.title.toUpperCase()}
-              className="content"
-            >
+            <div key={item.id} id={item.title.toUpperCase()} className="content">
               <h2>{item.title.toUpperCase()}</h2>
-              <ul className="foodList">
-                {item.type.map((food) => {
+              <ul className="drinkList">
+                {item.drinks.map(x => {
                   return (
-                    <li key={food.id}>
-                      <p className="foodName">{food.name.toUpperCase()}</p>
-
-                      {!!food.isRecipe ? (
-                        food.description.map((item, index) => {
-                          return (
-                            <p
-                              className={`foodDescription ${
-                                food.isMany ? "many" : ""
-                              }`}
-                              key={index}
-                            >
-                              {item.name}
-                            </p>
-                          );
-                        })
-                      ) : (
-                        <p className="foodDescription">{food.description}</p>
-                      )}
-                      <p className="foodPrice">{food.price}</p>
+                    <li key={x.id} className="listItem">
+                      <p className="sepDrinkTitle">{x.drinkTitle}</p>
+                      {x.drink.map(y => {
+                        return (
+                          <div key={y.id} className="sepDrink">
+                            <p className="drinkName">{y.name}</p>
+                            {!!y.description && <p className="drinkDesc">{y.description}</p>}
+                            <p className="drinkPrice">{y.price}</p>
+                          </div>
+                        );
+                      })}
                     </li>
                   );
                 })}

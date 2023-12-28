@@ -14,7 +14,7 @@ const Header = ({ showSideBar, setShowSideBar }) => {
   const loc = useLocation();
   const handleClick = () => {
     window.open(
-      'https://restaurant.opentable.com/v2/',
+      'https://www.opentable.com/r/katsin-glendale?shareReferrer=ios-share',
       '_blank', // <- This is what makes it open in a new window.
     );
   };
@@ -45,11 +45,10 @@ const Header = ({ showSideBar, setShowSideBar }) => {
       </div>
       <a href="tel:+18188693030" className="phone-link">
         <img src={phone} alt="img" />
-        <span>+1 (818) - 869 - 3030</span>
+        <span>+1 (818) 869 - 3030</span>
       </a>
       <Button
         onClick={handleClick}
-        disabled
         className={`white ${loc.pathname.includes('events') ? 'inevents' : ''}`}
       >
         Book Now

@@ -4,6 +4,13 @@ import Button from '../../components/button';
 import wine from '../../assets/video/wineVd.mp4';
 
 const WelcomePage = () => {
+  const handleClick = () => {
+    window.open(
+      'https://www.opentable.com/r/katsin-glendale?shareReferrer=ios-share',
+      '_blank', // <- This is what makes it open in a new window.
+    );
+  };
+
   return (
     <div className="welcomePage">
       <video className="smoke-video" autoPlay loop muted playsInline preload={'metadata'}>
@@ -23,7 +30,7 @@ const WelcomePage = () => {
                 Thank you for choosing Katsin. We look forward to serving you with passion and
                 delight.
               </p>
-              <Button>Book Now</Button>
+              <Button onClick={handleClick}>Book Now</Button>
             </div>
           </div>
         </div>

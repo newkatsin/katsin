@@ -83,7 +83,7 @@ const Footer = () => {
                   </div>
                   <a href="tel:+18188693030" className="phone-link">
                     <img src={phone} alt="img" />
-                    <span>+1 (818) - 869 - 3030</span>
+                    <span>+1 (818) 869 - 3030</span>
                   </a>
                   <a
                     href="https://www.google.com/maps/place/Katsin+Restaurant+and+Dining+Bar/@34.1470597,-118.2672905,17z/data=!3m1!4b1!4m6!3m5!1s0x80c2c1c8f527aba1:0xaa8b3daade84e096!8m2!3d34.1470553!4d-118.2647156!16s%2Fg%2F11y2344l5j?entry=ttu"
