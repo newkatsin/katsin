@@ -155,7 +155,7 @@ export const saladsSoup = [
   },
   {
     id: uuid(),
-    name: 'Herlum tomato salad',
+    name: 'Heirloom tomato salad',
     description: [
       {
         name: 'Feta cheese, dressing with sesame oil,',
@@ -417,7 +417,7 @@ export const specialties = [
 export const steaksFromCharcoalOven = [
   {
     id: uuid(),
-    name: 'PRIME ANGUS TOMEHAWK, 40 OZ',
+    name: 'PRIME ANGUS TOMAHAWK, 40 OZ',
     // description: 'chickpea tahini dup, edamame, mushrooms, fresh herbs',
     price: '142',
   },
